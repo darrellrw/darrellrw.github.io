@@ -1,0 +1,247 @@
+/* 
+    Color Pallete:
+        EAC696 
+        C8AE7D 
+        765827 
+        65451F 
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #EAC696;
+}
+
+nav, .social-link {
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #765827;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #C8AE7D;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #765827;
+}
+
+footer p {
+    color: #EAC696;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social-link ul {
+    align-items: center;
+}
+
+.social-link ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.social-link ul li a {
+    color: #EAC696;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.error-text {
+    text-align: center;
+    padding: 50vh;
+}
+
+.logo {
+    color: #765827;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    cursor: default;
+}
+
+.container {
+    margin: 50px 100px;
+    align-items: center;
+}
+
+.container-left {
+    width: 75%;
+}
+
+.card-left {
+    margin: 10px 0px;
+    border-style: solid;
+    border-width: 3px;
+    display: flex;
+    overflow: hidden;
+}
+
+.card-left img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    object-fit: cover;
+    transition: transform 0.2s linear;
+}
+
+.card-left:hover img {
+    transform: scale(1.05);
+}
+
+.card-left-text {
+    padding: 10px;
+    align-items: center;
+}
+
+.container-right {
+    width: 20%;
+    padding: 10px 25px;
+    float: right;
+}
+
+.container-right h2 {
+    text-align: center;
+}
+
+.container-right ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-right ul li a:hover {
+    text-decoration: underline;
+    color: #765827;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    .card-left img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .card-left-text p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: block;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav, .social-link {
+        margin-top: 20px;
+        flex: none;
+        text-align: left;
+    }
+
+    footer {
+        display: block;
+    }
+    
+    .social-link ul {
+        align-items: center;
+    }
+    
+    .social-link ul li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    
+    .social-link ul li a {
+        color: #EAC696;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .container-left {
+        width: 100%;
+    }
+
+    .container-right {
+        width: 100%;
+        float: left;
+        margin-bottom: 50px;
+    }
+
+    .card-left-text p {
+        max-width: 40ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .card-left img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-left-text p {
+        max-width: 25ch;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-left-text p {
+        max-width: 20ch;
+    }
+    .card-left-text h2 {
+        font-size: 20px;
+    }
+    .card-left img {
+        width: 75px;
+        height: 75px;
+    }
+}
