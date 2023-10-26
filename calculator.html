@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins">
         <title>Kalkulator</title>
     </head>
-    <body>
+    <body class="d-flex flex-column min-vh-100">
         <header style="background-color: #EAC696;">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -34,7 +34,7 @@
             </nav>
         </header>
 
-        <div class="container" style="padding: 0 20%;">
+        <div class="container mt-5" style="padding: 0 20%;">
             <h1 class="text-center" style="cursor: default;">Sebuah Kalkulator</h1>
             <div class="container border">
                 <input class="form-control border-0" style="text-align: right; cursor: default; font-size: 25px;" type="text" id="adder" value="" readonly>
@@ -45,98 +45,98 @@
 
                 <div class="row mt-3">
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="operation('%')">%</button>
+                        <button class="mx-2 w-100 btn btn-outline-primary" onclick="operation('%')">%</button>
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="clearEntry()">CE</button> 
+                        <button class="mx-2 cal-button btn btn-outline-primary" onclick="clearEntry()">CE</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="clearAll()">C</button> 
+                        <button class="mx-2 cal-button btn btn-outline-primary" onclick="clearAll()">C</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="delNumber()">DEL</button>
-                    </div>
-                </div>
-
-                <div class="row mt-3">
-                    <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="operation('1/x')">1/x</button> 
-                    </div>
-                    <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="operation('x^2')">x^2</button> 
-                    </div>
-                    <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="operation('x^(1/2)')">x^(1/2)</button> 
-                    </div>
-                    <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="operation('/')">/</button>
+                        <button class="mx-2 cal-button btn btn-outline-primary" onclick="delNumber()">DEL</button>
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(7)">7</button> 
+                        <button class="mx-2 cal-button btn btn-info" onclick="operation('1/x')">1/x</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(8)">8</button> 
+                        <button class="mx-2 cal-button btn btn-info" onclick="operation('x^2')">x^2</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(9)">9</button> 
+                        <button class="mx-2 cal-button btn btn-info" onclick="operation('x^(1/2)')">x^(1/2)</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="operation('X')">X</button>
-                    </div>
-                </div>
-
-                <div class="row mt-3">
-                    <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(4)">4</button> 
-                    </div>
-                    <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(5)">5</button> 
-                    </div>
-                    <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(6)">6</button> 
-                    </div>
-                    <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="operation('-')">-</button>
+                        <button class="mx-2 cal-button btn btn-info" onclick="operation('/')">/</button>
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(1)">1</button> 
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(7)">7</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(2)">2</button> 
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(8)">8</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(3)">3</button> 
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(9)">9</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="operation('+')">+</button>
+                        <button class="mx-2 cal-button btn btn-info" onclick="operation('X')">×</button>
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="operation('+/-')">+/-</button>
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(4)">4</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addNumber(0)">0</button>
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(5)">5</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="addKoma()">.</button>
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(6)">6</button> 
                     </div>
                     <div class="col">
-                        <button class="mx-2" style="width: 100%;" onclick="calculate()">=</button>
+                        <button class="mx-2 cal-button btn btn-info" onclick="operation('-')">-</button>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(1)">1</button> 
+                    </div>
+                    <div class="col">
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(2)">2</button> 
+                    </div>
+                    <div class="col">
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(3)">3</button> 
+                    </div>
+                    <div class="col">
+                        <button class="mx-2 cal-button btn btn-info" onclick="operation('+')">+</button>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <button class="mx-2 cal-button btn btn-secondary" onclick="operation('+/-')">+/-</button>
+                    </div>
+                    <div class="col">
+                        <button class="mx-2 btn btn-light cal-button" onclick="addNumber(0)">0</button>
+                    </div>
+                    <div class="col">
+                        <button class="mx-2 cal-button btn btn-secondary" onclick="addKoma()">.</button>
+                    </div>
+                    <div class="col">
+                        <button class="mx-2 cal-button btn btn-primary" onclick="calculate()">=</button>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <footer style="background-color: #765827;">
+        <footer class="mt-auto" style="background-color: #765827;">
             <div class="py-2 my-3">
                 <ul class="nav justify-content-center pb-2 mb-2">
                     <li class="nav-item"><a class="nav-link px-2 text-muted" href="https://www.youtube.com/@darrellrajendrawibowo9864" target="_blank">YouTube</a></li>

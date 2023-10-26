@@ -16,3 +16,7 @@
 .article-hover:hover img {
     transform: scale(1.05);
 }
+
+.cal-button {
+    width: 100%;
+}

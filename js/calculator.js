@@ -58,7 +58,7 @@ function operation(operate) {
         adder.value = display.value;
         display.value = 0;
         previousOperator = 'X';
-        opperant.value = 'X';
+        opperant.value = '×';
     }
     if(operate === '/' && previousOperator === null) {
         adder.value = display.value;
