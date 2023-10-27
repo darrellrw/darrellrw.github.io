@@ -20,3 +20,33 @@
 .cal-button {
     width: 100%;
 }
+
+.cal-body {
+    padding: 0 20% !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .btn {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container .row .col-9 {
+        width: 100vw;
+    }
+
+    .cal-body {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container .navbar-brand {
+        font-size: small;
+    }
+
+    .btn {
+        font-size: 5px !important;
+    }
+}
